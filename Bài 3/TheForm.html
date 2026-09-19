@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="trangchu.php" method="post" name="form" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Các thẻ trong fomr HTML</legend>
+    <label for="textbox">Họ tên</label>
+    <input name="txtHoten" type="text" id="textbox" size="50" maxlength="10" placeholder="Nhập vào họ tên">
+    <br>
+    <br>
+<label>Địa chỉ</label>
+<input name="txtDiachi" type="text" palceholder="Nhập địa chỉ">
+<br>
+<br>
+<label>Phản hồi tới admin</label> <br>
+<textarea rows="3" cols="50">Hãy nhập phản hồi cho admin ở đây.....</textarea> 
+<br>
+<br>
+<br>
+<br>
+<label>Mật khẩu</lable>
+<input name="txtPassword" type="password" placeholder="Nhập mật khẩu" minlength="8">
+<br>
+<br>
+<label>Hãy chọn một file từ máy tính</label><br>
+<input name="txtfile" type="file">
+<br>
+<br>
+<fieldset>
+    <legend>Khảo sát về tài khoản cá nhân</legend>
+<label for="idBike">I Have a Bike</lable><input name="chkPhuongtien" id="idBike"type="checkbox" value="Bike"><br>
+<label for="idCar">I Have  a Car</lable><input name="chkPhuongtien" id="idCar" type="checkbox" value="Car" checked><br>
+<label for="idAr">I Have a Airplane</label><input name="chkPhuongtien" id="idAr" type="checkbox" value="Airplane"> </fieldset>
+<br>
+<br>
+<fieldset>
+    <legend>Giới tính</legend>
+<input name="rdGT" type="radio" id="idNam" value="Nam"> <label for="idNam">Nam</label> <br> 
+<input name="rdGT" type="radio" id="idNu" value="Nu" checked> <label for="idNu">Nữ</label> </fieldset>
+
+<br>
+<br>
+<tabel>Hãy lựa chọn thông tin hãng xe của bạn đang dùng</tabel>
+<select>
+    <optgroup label="Hãng ô tô">
+        <option>Messides</option>
+        <option>Audi</option>
+        <option selected>Ford</option>
+        <option>BMW</option>
+    </optgroup>
+    <optgroup label="Hẵng xe máy">
+        <option>Honda</option>
+        <option>Yamaha</option>
+        <option>Vinfast</option>
+    </optgroup>
+</select>
+<br>
+<br>
+<babel>Ví dụ về ListBox</babel>
+<select multiple size="3">
+    <option>Chủ tịnh</option>
+    <option>Giám đốc</option>
+    <option>Trường Phòng</option>
+    <option selected>Nhân viên</option>
+    <option>Phục vụ</option>
+    <option>Bảo vệ</option>
+</search>
+<br>
+<br>
+<fieldset>
+    <legend>Các thẻ đặc biệt trong HTML</legend>
+    <legend>Chọn ngày sinh</legend> <input type="date"><br>
+    <legend>Chọn tháng</legend> <input type="month"><br>
+    <legend>Chọn tuần</legend><input type="Week"><br>
+    <legend>Chọn số</legend><input type="number" min="1" step="1"><br>
+    <legend>Chọn dải số</legend><input type="range" min="1" max="100" step="1"><br>
+    <legend>Chọn  thời gian</legend><input type="time"><br>
+    <legend>Chọn màu</legend><input type="color"><br>
+    <legend>Email</legend><input type="email">
+</fieldset>
+<br>
+<br>
+<input name="btnButton" type="button" value="Đăng ký">
+<br>
+<input name="btnSubmit" type="submit" value="Đăng nhập">
+<br>
+<input name="btnreset" type="reset" value="Nhập lại">
+<br>
+<input name="btnImage" type="image" src="ảnhGui.png" width="90" height="30"> </fieldset>
+   </form>
+</body>
+</html>

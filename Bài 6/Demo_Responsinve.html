@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+    
+        }
+        header{
+            background-color: rgb(88, 137, 236);
+            color: white;
+            text-align: center;
+            padding:1rem;
+        } 
+        nav{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(80, 80, 166);
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem ;
+            transition: background-color 0.3s;
+        }
+        nav a:hover{
+            background-color: rgb(96, 185, 182);
+
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+
+        }
+        section{
+            flex:1 1 300px;
+            background-color: aliceblue;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 16px;
+        }
+        footer{
+            background-color: rgb(50, 49, 49);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+
+        }
+        @media (max-width: 600px) {
+            nav{
+                flex-direction: column;
+
+            }
+            nav a{
+                padding: 0.8rem;
+                border-bottom: 1px solid red;
+            }
+             main{
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+            section{
+                padding: 0.5rem 0;
+
+            }
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Demo tính năng Responsinve</h1>
+
+    </header>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Dịch vụ</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Phần nội dung 1</h2>
+            <p>Đây là nội dung đầu tiên, Khi bạn thu nhỏ cửa sổ trình duyệt, thi các phần tử sẽ được sắp xếp lại một cách linh hoạt.</p>
+        </section>
+        <section>
+            <h2>Phần nội dung 2</h2>
+            <p>Đây là nội dung thứ hai, Kích thước các phần tử tự động thay đổi</p>
+        </section>
+        <section>
+            <h2>Phần nội dung 3</h2>
+            <p>Đây là nội dung thứ 3, Responsive hiển thị nội dung phù hợp với các loại thiết bị khác nhau</p>
+        </section>
+    </main>
+    <footer>
+        @copyright: CNTT K24L - ICTU
+    </footer>
+</body>
+</html>
